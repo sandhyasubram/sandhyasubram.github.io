@@ -226,7 +226,11 @@ h5 {
 
 .box-logo {
     display: block;
-    padding: 20px;
+    padding: 40px;
+}
+
+.box-logo img {
+    width: 50px;
 }
 
 .box-primary-nav-trigger {

@@ -1,0 +1,81 @@
+/* box-intro
+==================================================*/
+
+.box-intro {
+    text-align: left;
+    display: table;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/landing_pattern@2x.png');
+    background-size: auto calc(100vh - #{$header-height});
+    background-repeat: no-repeat;
+    background-position: right  #{$header-height};
+
+    .box-headline {
+        font-size: 48px;
+        text-transform: none;
+    }
+
+    .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    em {
+        font-style: normal;
+    }
+
+    h5 {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #999;
+        line-height: 1.7
+    }
+}
+
+b i:last-child {
+    color: #50507f !important;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .box-headline {
+        font-size: 100px;
+    }
+    .box-intro {
+        background-position: right 80px;
+        background-size: auto 50%;
+    }
+    .box-intro h5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .box-headline {
+        font-size: 100px;
+    }
+    .box-intro {
+        background-position: right 60px;
+    }
+    .box-intro h5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .box-headline {
+        font-size: 80px;
+    }
+    .box-intro h5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .box-headline {
+        font-size: 20px;
+    }
+}

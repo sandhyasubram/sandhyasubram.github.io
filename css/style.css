@@ -18,9 +18,13 @@
 ==================================================*/
 /* Dimensions
 ==================================================*/
+/* Fonts
+==================================================*/
 /* header
 ==================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 .box-header {
   z-index: 3;
   position: fixed;
@@ -38,7 +42,7 @@
   background: #fff;
   height: 80px;
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 0 20px 60px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -137,11 +141,11 @@
   right: 0;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 80%;
   background: #f7f7f7;
   z-index: 2;
   text-align: center;
-  padding: 20px 40px;
+  padding: 20px 0 20px 40px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: auto;
@@ -247,14 +251,13 @@
 @media only screen and (max-width: 670px) {
   .box-header {
     height: 60px;
-    padding: 20px 30px;
+    padding: 20px 20px 20px 30px;
   }
   .box-header .box-logo img {
     height: 24px;
   }
   .box-primary-nav {
     padding: 80px 0 0;
-    width: 80%;
     -webkit-box-shadow: inset 0 0 4px rgba(50, 50, 50, 0.08);
             box-shadow: inset 0 0 4px rgba(50, 50, 50, 0.08);
   }
@@ -270,6 +273,7 @@
 /* box-intro
 ==================================================*/
 .box-intro {
+  position: relative;
   text-align: left;
   display: table;
   height: 100vh;
@@ -278,70 +282,71 @@
   background-size: auto calc(100vh - 80px);
   background-repeat: no-repeat;
   background-position: right 80px;
+  color: #444;
+}
+
+.box-intro .intro-text {
+  position: absolute;
+  bottom: 25%;
+  padding-left: 60px;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.box-intro .intro-message {
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .box-intro .box-headline {
-  font-size: 48px;
+  margin-top: 0;
   text-transform: none;
 }
 
-.box-intro .table-cell {
-  display: table-cell;
-  vertical-align: middle;
+.box-intro .box-headline .box-words-wrapper {
+  margin-left: -6px;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.box-intro .box-headline .box-words-wrapper b {
+  font-weight: 800;
+}
+
+.box-intro .box-headline .box-words-wrapper b i {
+  padding-right: 2px;
 }
 
 .box-intro em {
   font-style: normal;
 }
 
-.box-intro h5 {
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #999;
-  line-height: 1.7;
-}
-
 b i:last-child {
   color: #50507f !important;
 }
 
-@media only screen and (max-width: 800px) {
-  .box-headline {
-    font-size: 100px;
-  }
+@media only screen and (max-width: 1024px) {
   .box-intro {
     background-position: right 80px;
     background-size: auto 50%;
   }
-  .box-intro h5 {
-    font-size: 12px;
+  .box-intro .intro-text {
+    font-size: 60px;
   }
 }
 
 @media only screen and (max-width: 670px) {
-  .box-headline {
-    font-size: 100px;
-  }
   .box-intro {
     background-position: right 60px;
+    background-size: 100% auto;
   }
-  .box-intro h5 {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .box-headline {
-    font-size: 80px;
-  }
-  .box-intro h5 {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .box-headline {
-    font-size: 20px;
+  .box-intro .intro-text {
+    bottom: 18%;
+    padding-left: 30px;
+    font-size: 30px;
   }
 }
 
@@ -352,7 +357,7 @@ b i:last-child {
 html,
 body {
   height: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.8;
   color: #999;
 }
@@ -395,6 +400,12 @@ a {
 .color {
   color: #50507f;
   font-size: 11px;
+}
+
+.outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* typography
@@ -495,20 +506,8 @@ h5 {
   left: 50%;
   margin-left: -12px;
   border-radius: 15px;
-  border: 2px solid #888;
   -webkit-animation: intro 1s;
   animation: intro 1s;
-}
-
-.scroll {
-  display: block;
-  width: 3px;
-  height: 3px;
-  margin: 6px auto;
-  border-radius: 4px;
-  background: #888;
-  -webkit-animation: finger 2s infinite;
-  animation: finger 2s infinite;
 }
 
 @-webkit-keyframes intro {
@@ -560,11 +559,6 @@ h5 {
 }
 
 /* text rotate */
-.box-headline {
-  font-size: 130px;
-  line-height: 1.0;
-}
-
 .box-words-wrapper {
   display: inline-block;
   position: relative;

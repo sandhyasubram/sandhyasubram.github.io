@@ -2,6 +2,7 @@
 ==================================================*/
 
 .box-intro {
+    position: relative;
     text-align: left;
     display: table;
     height: 100vh;
@@ -10,27 +11,47 @@
     background-size: auto calc(100vh - #{$header-height});
     background-repeat: no-repeat;
     background-position: right  #{$header-height};
+    color: $theme-dark;
 
-    .box-headline {
-        font-size: 48px;
-        text-transform: none;
+    .intro-text {
+        position: absolute;
+        bottom: 25%;
+        padding-left: 60px;      
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+        font-weight: 600; 
     }
 
-    .table-cell {
-        display: table-cell;
-        vertical-align: middle;
+    .intro-message {   
+        font-size: $big;
+        line-height: 60px;
+    }
+
+    .box-headline {
+        margin-top: 0;        
+        text-transform: none;
+
+        .box-words-wrapper {          
+            margin-left: -6px;
+            font-family: 'Lato', sans-serif;       
+            font-size: 30px;
+            text-transform: uppercase;
+            color: $theme-grey;
+
+            b {
+                font-weight: 800;
+
+                i{
+                    padding-right: 2px;
+                }
+            }
+        }
     }
 
     em {
         font-style: normal;
     }
 
-    h5 {
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        color: #999;
-        line-height: 1.7
-    }
 }
 
 b i:last-child {
@@ -40,42 +61,27 @@ b i:last-child {
 
 
 
-@media only screen and (max-width: 800px) {
-    .box-headline {
-        font-size: 100px;
-    }
+@media only screen and (max-width: 1024px) {
     .box-intro {
         background-position: right 80px;
         background-size: auto 50%;
-    }
-    .box-intro h5 {
-        font-size: 12px;
+
+        .intro-text {
+            font-size: 60px;
+        }
     }
 }
 
 @media only screen and (max-width: 670px) {
-    .box-headline {
-        font-size: 100px;
-    }
     .box-intro {
         background-position: right 60px;
-    }
-    .box-intro h5 {
-        font-size: 12px;
-    }
+        background-size: 100% auto;
+
+        .intro-text {
+            bottom: 18%;
+            padding-left: 30px; 
+            font-size: 30px;
+        }
+    }   
 }
 
-@media only screen and (max-width: 520px) {
-    .box-headline {
-        font-size: 80px;
-    }
-    .box-intro h5 {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .box-headline {
-        font-size: 20px;
-    }
-}

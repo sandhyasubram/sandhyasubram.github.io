@@ -532,12 +532,11 @@ h5 {
 footer {
     padding: 30px 0;
     text-align: center;
-    background: #f5f5f5
-}
-
-.copyright {
-    color: #ccc;
-    margin-bottom: 0;
+    background: #f5f5f5;
+    background-image: url('../img/landing_pattern_1@2x.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 footer img {

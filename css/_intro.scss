@@ -16,9 +16,9 @@
     .intro-text {
         position: absolute;
         bottom: 25%;
-        padding-left: 60px;      
+        padding-left: 120px;      
         font-family: 'Playfair Display', serif;
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 600; 
     }
 
@@ -30,10 +30,10 @@
     .box-headline {
         margin-top: 0;        
         text-transform: none;
-        font-size: 30px;
+        font-size: 36px;
 
         .box-words-wrapper {          
-            margin-left: -0.3em;
+            margin-left: -0.2em;
             font-family: 'Lato', sans-serif;             
             font-size: 1em;     
             line-height: 1em;
@@ -61,15 +61,13 @@ b i:last-child {
     color: #50507f !important;
 }
 
-
-
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $tab-big) {
     .box-intro {
         background-position: right 80px;
         background-size: auto 50%;
 
         .intro-text {
+            padding-left: 100px;
             font-size: 40px;
 
             .box-headline {
@@ -79,13 +77,25 @@ b i:last-child {
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: $tab-small) {
+    .box-intro {
+        .intro-text {
+            padding-left: 70px;
+
+            .box-headline {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
     .box-intro {
         background-position: right 60px;
         background-size: 100% auto;
 
         .intro-text {
-            bottom: 18%;
+            bottom: 24%;
             padding-left: 30px; 
             font-size: 20px;
 

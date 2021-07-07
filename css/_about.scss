@@ -1,0 +1,30 @@
+.about-container {
+    padding: 100px 80px 0;  
+    color: $theme-dark;
+    font-size: 20px;
+
+    .about-heading {
+        font-size: 1.2em;
+    }
+
+    .about-text {      
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .about-image {
+        text-align: center;
+        img {
+            height: 250px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: $mobile) {
+    .about-container {
+        padding: 100px 20px 0; 
+        font-size: 14px;   
+    }
+}
+

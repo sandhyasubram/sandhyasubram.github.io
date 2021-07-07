@@ -18,6 +18,7 @@
 @import './variables';
 @import './header';
 @import './intro';
+@import './about';
 
 /* Google fonts & font family
 ==================================================*/
@@ -555,7 +556,7 @@ footer img {
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: $mobile) {
     footer {
         background-position: -142px bottom;
     }

@@ -14,7 +14,7 @@
     height: $header-height;
     width: 100%;
     padding: 20px 0 20px 60px;
-    box-shadow: 0 1px 10px 10px rgba(92, 65, 65, 0.06);
+    box-shadow: 0 1px 8px 8px rgba(92, 65, 65, 0.05);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -114,7 +114,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    width: 80%;
+    width: 85%;
     background: $theme-light;
     z-index: 2;
     text-align: center;
@@ -148,14 +148,13 @@
 
     a {
         display: inline-block;
-        padding: 8px 0;
         margin: 0 24px 0;
         border-radius: 0.25em;
         -webkit-transition: all 0.2s;
         transition: all 0.2s;
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 1px;
         font-weight: 600;
         color: $theme-dark; 
@@ -167,7 +166,7 @@
                 border-bottom: 2px solid $theme-purple;
             }
             &.selected {
-                font-weight: 800;              
+                font-weight: 700;              
                 color: $theme-purple;
                 border-bottom: 2px solid $theme-purple;
             }
@@ -202,7 +201,16 @@
     transform: translateY(0);
 }
 
-@media only screen and (min-width: 670px) {
+@media only screen and (min-width: $tab-big) {
+    .box-header {
+        .box-logo {
+            margin-left: 40px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: $mobile) {
     .box-primary-nav-trigger {
         display: none;
     }
@@ -219,7 +227,7 @@
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: $mobile) {
     .box-header {
         height: 60px;
         padding: 20px 20px 20px 30px;
@@ -235,8 +243,20 @@
     }
 
     .box-primary-nav a {
-        padding: 5px 0 0;
+        padding: 0 10px;
+        margin-bottom: 20px;
         font-size: 14px;
+        border-right: 2px solid transparent;
+
+        &:hover {
+            border-bottom: none;
+            border-right: 2px solid $theme-purple;
+        }
+
+        &.selected {
+            border-bottom: none;
+            border-right: 2px solid $theme-purple;
+        }
     }
     
     .box-primary-nav .box-social a {

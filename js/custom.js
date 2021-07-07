@@ -6,6 +6,10 @@ $(window).load(function () {
     $('body').delay(550).css({
         'overflow': 'visible'
     });
+    let pageHeight = window.innerHeight;
+    $('.mouse').on('click', function(){ 
+        $("html, body").animate({ scrollTop: pageHeight}, 1000);
+    });
 
 
     //  isotope

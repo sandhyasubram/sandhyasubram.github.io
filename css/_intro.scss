@@ -23,18 +23,21 @@
     }
 
     .intro-message {   
-        font-size: $big;
-        line-height: 60px;
+        font-size: 2em;   
+        line-height: 1em;
     }
 
     .box-headline {
         margin-top: 0;        
         text-transform: none;
+        font-size: 30px;
 
         .box-words-wrapper {          
-            margin-left: -8px;
-            font-family: 'Lato', sans-serif;       
-            font-size: 30px;
+            margin-left: -0.3em;
+            font-family: 'Lato', sans-serif;             
+            font-size: 1em;     
+            line-height: 1em;
+            margin-top: 0.8em;
             text-transform: uppercase;
             color: $theme-purple;
 
@@ -67,7 +70,11 @@ b i:last-child {
         background-size: auto 50%;
 
         .intro-text {
-            font-size: 60px;
+            font-size: 40px;
+
+            .box-headline {
+                font-size: 50px;
+            }
         }
     }
 }
@@ -80,7 +87,11 @@ b i:last-child {
         .intro-text {
             bottom: 18%;
             padding-left: 30px; 
-            font-size: 30px;
+            font-size: 20px;
+
+            .box-headline {
+                font-size: 24px;
+            }
         }
     }   
 }

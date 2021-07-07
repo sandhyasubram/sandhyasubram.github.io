@@ -195,41 +195,31 @@ h5 {
 /* mouse effect */
 
 .mouse {
+    cursor: pointer;
     position: absolute;
+    padding: 20px 0;
     bottom: 40px;
     left: 50%;
     margin-left: -12px;
     border-radius: 15px;
-    -webkit-animation: intro 1s;
-    animation: intro 1s;
     color: $theme-purple;
+
+    &:hover {
+         /* Start the shake animation and make the animation last for 0.5 seconds */
+         animation: shake 1s;
+         animation-timing-function: ease-in-out;
+          
+         /* When the animation is finished, start again */
+         animation-iteration-count: infinite;
+    }
+   
+    @keyframes shake {
+        0% { opacity: 1; transform: translateY(0); }
+        60% { opacity:1; transform: translateY(5px);}
+        100% { opacity:1; transform: translateY(0);}
+    }
 }
 
-@-webkit-keyframes intro {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(40px);
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-@keyframes intro {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(40px);
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
 
 @-webkit-keyframes finger {
     0% {

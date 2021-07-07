@@ -235,16 +235,8 @@
     }
 
     .box-primary-nav a {
-        padding: 5px 1em;
+        padding: 5px 0 0;
         font-size: 14px;
-        border: none;
-
-        &:hover {
-            border: none;
-        }
-        &.selected {
-            border: none;
-        }
     }
     
     .box-primary-nav .box-social a {

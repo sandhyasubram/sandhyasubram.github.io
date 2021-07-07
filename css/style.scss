@@ -31,7 +31,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.8;
     color: #999
 }
@@ -69,6 +69,15 @@ a {
 
 .h-10 {
     height: 10px
+}
+
+.icon {
+    font-size: 24px;
+    vertical-align: text-top;
+
+    &.large {
+        font-size: 36px;
+    }
 }
 
 .color {
@@ -177,14 +186,13 @@ h5 {
 
 .mouse {
     position: absolute;
-    width: 22px;
-    height: 42px;
     bottom: 40px;
     left: 50%;
     margin-left: -12px;
     border-radius: 15px;
     -webkit-animation: intro 1s;
     animation: intro 1s;
+    color: $theme-purple;
 }
 
 @-webkit-keyframes intro {
@@ -537,10 +545,17 @@ footer {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: left bottom;
+    color: $theme-grey;
 }
 
 footer img {
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 670px) {
+    footer {
+        background-position: -142px bottom;
+    }
 }
 
 

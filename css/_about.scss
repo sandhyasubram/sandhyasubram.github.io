@@ -1,30 +1,63 @@
 .about-container {
-    padding: 100px 80px 0;  
+    width: 75%;
+    margin: $header-height auto 0;  
+    padding: 20px 0 80px;
     color: $theme-dark;
     font-size: 20px;
 
     .about-heading {
+        margin-bottom: 10px;
         font-size: 1.2em;
+        font-weight: 600;
     }
 
-    .about-text {      
-        padding: 1em;
+    .about-text {
+        padding: 10px 20px;
         font-size: 1em;
+
+        .button {
+            margin: 0 auto;
+        }
     }
 
     .about-image {
-        text-align: center;
-        img {
-            height: 250px;
+        padding: 20px 0;
+
+        img {        
+            margin: 0 auto;
+            height: 300px;
         }
     }
     
 }
 
+@media only screen and (max-width: $tab-big) {
+    .about-container {
+        width: 60%; 
+        height: calc(100vh - 160px);
+    }
+}
+
+@media only screen and (max-width: $tab-small) {
+    .about-container {
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: $mobile) {
     .about-container {
-        padding: 100px 20px 0; 
-        font-size: 14px;   
+        width: 90%; 
+        padding: 0 0 40px;
+        font-size: 16px;
+
+        .about-image {
+
+            img {        
+                margin: 0 auto;
+                width: 80%;
+                height: auto;
+            }
+        }
     }
 }
 

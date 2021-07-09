@@ -1,0 +1,49 @@
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: url('../img/landing_pattern@2x.png');
+    background-size: auto calc(100% - #{$header-height});
+    background-repeat: no-repeat;
+    background-position: right  #{$header-height};
+    text-align: center;
+}
+
+.top-bar h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #999;
+    line-height: 50px;
+}
+
+.top-bar p {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #777;
+}
+
+.top-bar p a {
+    color: #777;
+}
+
+.top-bar p a:hover,
+.top-bar p a:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+@media screen and (max-width: $tab-big) {
+
+}
+
+@media screen and (max-width: $tab-small) {
+
+}
+
+@media screen and (max-width: $mobile) {
+
+}

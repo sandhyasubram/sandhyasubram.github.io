@@ -443,7 +443,6 @@ body {
 
 .main-container {
   padding: 100px 0;
-  background: #f7f7f7;
   min-height: calc(100vh - 80px);
 }
 
@@ -454,6 +453,8 @@ body {
 a {
   -webkit-transition: all .3s;
   transition: all .3s;
+  text-decoration: none;
+  color: #50507f;
 }
 
 .uppercase {
@@ -478,7 +479,6 @@ a {
 }
 
 p {
-  padding: 20px;
   margin: 0;
 }
 
@@ -491,6 +491,26 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.button {
+  background-color: #50507f;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.button a {
+  color: #f7f7f7;
+  font-size: 14px;
+}
+
+object > div {
+  margin: 20px 40px 0;
+  color: #666;
+  font-size: 16px;
 }
 
 /* typography
@@ -586,7 +606,7 @@ h5 {
 .mouse {
   cursor: pointer;
   position: absolute;
-  padding: 20px 0;
+  padding: 10px 0;
   bottom: 40px;
   left: 50%;
   margin-left: -12px;

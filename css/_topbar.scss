@@ -3,11 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    background-image: url('../img/landing_pattern@2x.png');
-    background-size: auto calc(100% - #{$header-height});
+    margin-top: 80px;
+    height: 80px;
+    background-image: url('../img/landing_pattern_4@2x.png');
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: right  #{$header-height};
+    background-position: right top;
     text-align: center;
 }
 
@@ -45,5 +46,8 @@
 }
 
 @media screen and (max-width: $mobile) {
-
+    .top-bar {
+        background-image: url('../img/landing_pattern_3@2x.png');
+        margin-top: 60px;
+    }
 }

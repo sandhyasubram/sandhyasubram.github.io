@@ -38,7 +38,6 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -101,8 +100,8 @@ table {
   height: 80px;
   width: 100%;
   padding: 20px 0 20px 60px;
-  -webkit-box-shadow: 0 1px 8px 8px rgba(92, 65, 65, 0.05);
-          box-shadow: 0 1px 8px 8px rgba(92, 65, 65, 0.05);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 12px 0px;
+          box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 12px 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -262,25 +261,6 @@ table {
   outline: none;
 }
 
-.box-primary-nav .box-label {
-  color: #50507f;
-  font-weight: 700;
-  font-size: 17px;
-  margin: 2.4em 0 .8em;
-}
-
-.box-primary-nav .box-social {
-  display: inline-block;
-  margin: 10px .4em;
-}
-
-.box-primary-nav .box-social a {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  font-size: 30px;
-}
-
 .box-primary-nav.is-visible {
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -289,6 +269,9 @@ table {
 @media only screen and (min-width: 1024px) {
   .box-header .box-logo {
     margin-left: 40px;
+  }
+  .box-primary-nav {
+    margin-right: 60px;
   }
 }
 
@@ -326,8 +309,8 @@ table {
   }
   .box-primary-nav {
     padding: 80px 0 0;
-    -webkit-box-shadow: inset 0 0 4px rgba(50, 50, 50, 0.08);
-            box-shadow: inset 0 0 4px rgba(50, 50, 50, 0.08);
+    -webkit-box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 10px 0px;
+            box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 10px 0px;
   }
   .box-primary-nav a {
     padding: 0 10px;
@@ -511,11 +494,12 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 250px;
-  background-image: url("../img/landing_pattern@2x.png");
-  background-size: auto calc(100% - 80px);
+  margin-top: 80px;
+  height: 80px;
+  background-image: url("../img/landing_pattern_4@2x.png");
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: right 80px;
+  background-position: right top;
   text-align: center;
 }
 
@@ -542,6 +526,13 @@ table {
 .top-bar p a:focus {
   color: #555;
   text-decoration: none;
+}
+
+@media screen and (max-width: 670px) {
+  .top-bar {
+    background-image: url("../img/landing_pattern_3@2x.png");
+    margin-top: 60px;
+  }
 }
 
 /* Google fonts & font family
@@ -1132,7 +1123,7 @@ footer img {
 
 @media only screen and (max-width: 670px) {
   footer {
-    background-position: -142px bottom;
+    background-image: url("../img/landing_pattern_2@2x.png");
   }
 }
 

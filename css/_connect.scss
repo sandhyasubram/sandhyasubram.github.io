@@ -1,3 +1,54 @@
 .connect-container {
-    width: 80%;
+    width: 75%;
+    font-size: 24px;
+
+    .connect-section {
+        margin-bottom: 1.5em;
+
+        &:first-child {
+            margin-top: 1em;
+        }
+    }
+
+    .connect-links {
+        display: flex;
+    }
+
+    .connect-label {
+        font-size: 0.9em;
+    }
+
+    .connect-social {
+        font-size: 2em;
+        padding: 0 0.6em;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        a:hover {
+            color: $theme-purple-light;
+        }
+    }
+}
+
+@media screen and (max-width: $tab-big) {
+    .connect-container {
+        min-height: calc(100vh - 260px);
+    }
+}
+
+@media screen and (max-width: $tab-small) {
+    .connect-container {
+    
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .connect-container {
+        width: 100%;
+        min-height: calc(100vh - 240px);
+        padding: 0 $padding-small;
+        font-size: 18px;
+    }
 }

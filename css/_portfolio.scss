@@ -1,18 +1,7 @@
 .portfolio-container {
     width: 75%;
+    margin-bottom: 10px;
     font-size: 24px;
-
-    .portfolio-section {
-        margin-bottom: 1.5em;
-
-        &:first-child {
-            margin-top: 1em;
-        }
-    }
-
-    .portfolio-links {
-        display: flex;
-    }
 
     .portfolio_filter {
         font-size: 0.8em;
@@ -67,6 +56,11 @@
     position: relative;
     overflow: hidden;
     display: block;
+    padding: 10px;
+
+    img {
+        border-radius: 6px;
+    }
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -163,6 +157,27 @@
         min-height: calc(100vh - 260px);
     }
 }
+
+/* Responsive media queries
+==================================================*/
+
+@media (max-width: 991px) {
+    .portfolio .categories-grid span {
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .portfolio .categories-grid .categories ul li {
+        text-align: center;
+    }
+    .portfolio .categories-grid .categories ul li a {
+        margin-left: 0;
+    }
+    .col-md-6 h3 {
+        margin-top: 30px;
+    }
+}
+
 
 @media screen and (max-width: $tab-small) {
     .portfolio-container {

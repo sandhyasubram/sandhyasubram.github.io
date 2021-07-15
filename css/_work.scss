@@ -13,7 +13,12 @@
         
         img {
             border-radius: 6px;
+            margin: 0 auto;
         }
+    }
+
+    .button {
+        margin-bottom: 30px;
     }
 }
 
@@ -22,7 +27,7 @@
         min-height: calc(100vh - 260px);
 
         .button {
-            margin: 20px auto 0;
+            margin: 20px auto;
         }
     }
 }

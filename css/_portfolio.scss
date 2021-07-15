@@ -86,24 +86,15 @@
     transform: translate(-50%, -50%);
     padding: 10px;
     width: 100%;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.8em;
     color: $theme-light;
-
-    div {
-        margin-bottom: 10px;
-    }
 }
 
 .portfolio_item .portfolio_item_hover .item_info em {
-    width: auto;
-    background-color: $theme-light;
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: $theme-purple;
-    opacity: 0;
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: $theme-light;
 }
 
 .portfolio_item:hover .portfolio_item_hover {

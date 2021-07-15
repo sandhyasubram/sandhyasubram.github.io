@@ -70,6 +70,10 @@ a {
      &:hover {
          text-decoration: none;
      }
+
+     &:active {
+         text-decoration: none;
+     }
 }
 
 .uppercase {
@@ -116,7 +120,7 @@ p {
 
 .button {
     background-color: $theme-purple;
-    padding: 10px 20px;
+    padding: 9px 20px 10px;
     border-radius: 4px;
     width: fit-content;
 
@@ -131,6 +135,10 @@ object > div {
     margin: 20px 40px 0;
     color: $theme-grey;
     font-size: 16px;
+}
+
+.new {
+    color: $theme-purple-light;
 }
 
 /* typography

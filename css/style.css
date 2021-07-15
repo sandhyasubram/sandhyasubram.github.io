@@ -614,24 +614,15 @@ table {
   transform: translate(-50%, -50%);
   padding: 10px;
   width: 100%;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.8em;
   color: #f7f7f7;
 }
 
-.portfolio_item .portfolio_item_hover .item_info div {
-  margin-bottom: 10px;
-}
-
 .portfolio_item .portfolio_item_hover .item_info em {
-  width: auto;
-  background-color: #f7f7f7;
-  padding: 10px 20px;
-  border-radius: 4px;
-  color: #50507f;
-  opacity: 0;
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #f7f7f7;
 }
 
 .portfolio_item:hover .portfolio_item_hover {
@@ -712,6 +703,11 @@ table {
 
 .work-container .work-image img {
   border-radius: 6px;
+  margin: 0 auto;
+}
+
+.work-container .button {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -719,7 +715,7 @@ table {
     min-height: calc(100vh - 260px);
   }
   .work-container .button {
-    margin: 20px auto 0;
+    margin: 20px auto;
   }
 }
 
@@ -826,6 +822,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:active {
+  text-decoration: none;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -872,7 +872,7 @@ p {
 
 .button {
   background-color: #50507f;
-  padding: 10px 20px;
+  padding: 9px 20px 10px;
   border-radius: 4px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -889,6 +889,10 @@ object > div {
   margin: 20px 40px 0;
   color: #666;
   font-size: 16px;
+}
+
+.new {
+  color: #9393CC;
 }
 
 /* typography

@@ -619,7 +619,7 @@ table {
   color: #f7f7f7;
 }
 
-.portfolio_item .portfolio_item_hover .item_info em {
+.portfolio_item em {
   font-weight: 600;
   font-size: 0.8em;
   color: #f7f7f7;
@@ -857,6 +857,7 @@ a:active {
 
 p {
   margin: 0;
+  font-size: 0.8em;
 }
 
 .color {

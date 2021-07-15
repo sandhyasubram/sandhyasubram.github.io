@@ -21,6 +21,7 @@
 @import './about';
 @import './topbar';
 @import './portfolio';
+@import './work';
 @import './connect';
 
 /* Google fonts & font family
@@ -37,7 +38,7 @@ body {
     height: 100%;
     font-family: 'Lato', sans-serif;
     line-height: 1.8;
-    color: #999;
+    color: $theme-grey;
     overflow: auto;
 }
 
@@ -65,6 +66,10 @@ a {
     transition: all .3s;
     text-decoration: none;
     color: $theme-purple;
+
+     &:hover {
+         text-decoration: none;
+     }
 }
 
 .uppercase {
@@ -466,6 +471,7 @@ footer img {
     text-align: center;
     color: #fff;
     background: $theme-purple-light;
+    border-radius: 4px;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;

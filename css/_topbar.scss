@@ -15,8 +15,10 @@
     color: $theme-dark;
 
     .heading {
+        width: 75%;
+        padding: 0 15px;
         font-size: 1em;
-        padding: 15px;
+        line-height: 1.5em;
     }
 }
 

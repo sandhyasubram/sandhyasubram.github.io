@@ -236,7 +236,6 @@ table {
   border-radius: 0.25em;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  text-decoration: none;
   text-transform: capitalize;
   font-size: 16px;
   letter-spacing: 1px;
@@ -508,8 +507,10 @@ table {
 }
 
 .top-bar .heading {
+  width: 75%;
+  padding: 0 15px;
   font-size: 1em;
-  padding: 15px;
+  line-height: 1.5em;
 }
 
 @media screen and (max-width: 670px) {
@@ -575,10 +576,6 @@ table {
   padding: 0px 20px;
   color: white;
   border-radius: 25px;
-  text-decoration: none;
-}
-
-.portfolio .categories-grid .categories ul li a:hover {
   text-decoration: none;
 }
 
@@ -698,6 +695,43 @@ table {
   }
 }
 
+.work-container {
+  width: 75%;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.work-container .work-text {
+  padding: 15px 0;
+  font-size: 0.8em;
+}
+
+.work-container .work-image {
+  padding: 15px 0;
+}
+
+.work-container .work-image img {
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .work-container {
+    min-height: calc(100vh - 260px);
+  }
+  .work-container .button {
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .work-container {
+    width: 100%;
+    min-height: calc(100vh - 240px);
+    padding: 0 40px 20px;
+    font-size: 18px;
+  }
+}
+
 .connect-container {
   width: 75%;
   font-size: 24px;
@@ -758,7 +792,7 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
   line-height: 1.8;
-  color: #999;
+  color: #666;
   overflow: auto;
 }
 
@@ -786,6 +820,10 @@ a {
   transition: all .3s;
   text-decoration: none;
   color: #50507f;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .uppercase {
@@ -1219,6 +1257,7 @@ footer img {
   text-align: center;
   color: #fff;
   background: #9393CC;
+  border-radius: 4px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;

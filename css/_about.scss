@@ -1,5 +1,6 @@
 .about-container {
-    width: 75%;
+    width: 75%;  
+    min-height: calc(100vh - 260px);
     margin: $header-height auto 0;  
     padding: 20px 0 80px;
     color: $theme-dark;

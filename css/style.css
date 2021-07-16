@@ -427,6 +427,7 @@ table {
 
 .about-container {
   width: 75%;
+  min-height: calc(100vh - 260px);
   margin: 80px auto 0;
   padding: 20px 0 80px;
   color: #444;
@@ -528,6 +529,7 @@ table {
 
 .portfolio-container {
   width: 75%;
+  min-height: calc(100vh - 260px);
   margin-bottom: 10px;
   font-size: 24px;
 }
@@ -653,12 +655,6 @@ table {
   padding-top: 55px;
 }
 
-@media screen and (max-width: 1024px) {
-  .portfolio-container {
-    min-height: calc(100vh - 260px);
-  }
-}
-
 /* Responsive media queries
 ==================================================*/
 @media (max-width: 991px) {
@@ -692,6 +688,7 @@ table {
 
 .work-container {
   width: 75%;
+  min-height: calc(100vh - 260px);
   padding-bottom: 20px;
   font-size: 24px;
 }
@@ -715,9 +712,6 @@ table {
 }
 
 @media screen and (max-width: 1024px) {
-  .work-container {
-    min-height: calc(100vh - 260px);
-  }
   .work-container .button {
     margin: 20px auto;
   }
@@ -734,6 +728,7 @@ table {
 
 .connect-container {
   width: 75%;
+  min-height: calc(100vh - 260px);
   font-size: 24px;
 }
 
@@ -766,12 +761,6 @@ table {
 
 .connect-container .connect-social a:hover {
   color: #9393CC;
-}
-
-@media screen and (max-width: 1024px) {
-  .connect-container {
-    min-height: calc(100vh - 260px);
-  }
 }
 
 @media screen and (max-width: 670px) {

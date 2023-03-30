@@ -121,7 +121,7 @@ p {
 
 .button {
     background-color: $theme-purple;
-    padding: 9px 20px 10px;
+    padding: 0 20px 9px;
     border-radius: 4px;
     width: fit-content;
 
@@ -326,7 +326,7 @@ h5 {
 }
 
 .box-headline.rotate-2 b {
-    opacity: 0;
+    // opacity: 0;
 }
 
 .box-headline.rotate-2 i {

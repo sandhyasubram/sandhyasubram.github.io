@@ -865,7 +865,7 @@ p {
 
 .button {
   background-color: #50507f;
-  padding: 0 20px 9px;
+  padding: 4px 20px 9px;
   border-radius: 4px;
   width: -webkit-fit-content;
   width: -moz-fit-content;

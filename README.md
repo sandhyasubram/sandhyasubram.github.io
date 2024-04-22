@@ -13,4 +13,9 @@ My Portfolio
 * Website : www.ahmedessa.net
 */
 
-
+/*
+* Instructions for deplyoment
+*/
+- Watch Sass
+- Live server
+- Port 5500

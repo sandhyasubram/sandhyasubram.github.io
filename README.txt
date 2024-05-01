@@ -18,7 +18,7 @@
 */
 
 /*
-* Instructions
+* Working Instructions
 */
 - Watch Sass
 - Live server

@@ -995,3 +995,11 @@ span.error {
 		}
 	}
 }
+
+.image-logo {
+	width: 40px;
+
+	@include media-breakpoint-down(md) {
+		width: 30px;
+	}
+}

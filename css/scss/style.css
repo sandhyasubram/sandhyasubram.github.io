@@ -161,7 +161,7 @@ a:hover {
 }
 .unslate_co--site-nav .site-logo.pos-absolute {
   position: absolute;
-  left: 50%;
+  left: 20px;
   transform: translateX(-50%);
 }
 .unslate_co--site-nav .site-nav-ul-wrap {
@@ -620,6 +620,9 @@ a:hover {
 }
 .cover-v1 h3.subheading {
   font-size: 28px;
+}
+.cover-v1 h5.subheading {
+  font-size: 20px;
 }
 
 .mouse-wrap {
@@ -1767,4 +1770,13 @@ span.error {
 }
 .social-icons li span::before {
   font-size: 24px;
+}
+
+.image-logo {
+  width: 40px;
+}
+@media (max-width: 991.98px) {
+  .image-logo {
+    width: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -978,7 +978,7 @@ span.error {
 .img-header {
 	width: 200px;
     height: 200px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
     -webkit-border-radius: 200px; /* Saf3+, Chrome */
     border-radius: 200px; /* Opera 10.5, IE 9 */
     /*-moz-border-radius: 30px;  Disabled for FF1+ */
@@ -1001,5 +1001,14 @@ span.error {
 
 	@include media-breakpoint-down(md) {
 		width: 30px;
+	}
+}
+
+object {
+	width:100%;
+	height: 80vh;
+
+	@include media-breakpoint-down(sm) {
+		height: 50vh;
 	}
 }

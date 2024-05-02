@@ -432,11 +432,10 @@ a:hover {
   z-index: 1009;
   height: 100vh;
   background: #fff;
-  width: 280px;
   overflow: auto;
   padding-top: 30px;
   padding-bottom: 70px;
-  width: 280px;
+  width: 100%;
   left: 0;
   transform: translateX(-100%);
   transition: 1s transform cubic-bezier(0.23, 1, 0.32, 1);
@@ -622,7 +621,20 @@ a:hover {
   font-size: 28px;
 }
 .cover-v1 h5.subheading {
-  font-size: 20px;
+  font-size: 24px;
+}
+@media (max-width: 767.98px) {
+  .cover-v1 h5.subheading {
+    font-size: 16px;
+  }
+}
+.cover-v1 h6.subheading {
+  font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  .cover-v1 h6.subheading {
+    font-size: 14px;
+  }
 }
 
 .mouse-wrap {
@@ -1757,7 +1769,7 @@ span.error {
 .img-header {
   width: 200px;
   height: 200px;
-  margin-bottom: 60px; /* Saf3+, Chrome */
+  margin-bottom: 50px; /* Saf3+, Chrome */
   border-radius: 200px; /* Opera 10.5, IE 9 */
   /*-moz-border-radius: 30px;  Disabled for FF1+ */
 }
@@ -1778,5 +1790,15 @@ span.error {
 @media (max-width: 991.98px) {
   .image-logo {
     width: 30px;
+  }
+}
+
+object {
+  width: 100%;
+  height: 80vh;
+}
+@media (max-width: 767.98px) {
+  object {
+    height: 50vh;
   }
 }/*# sourceMappingURL=style.css.map */

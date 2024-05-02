@@ -1009,6 +1009,6 @@ object {
 	height: 80vh;
 
 	@include media-breakpoint-down(sm) {
-		height: 50vh;
+		height: 100%;
 	}
 }

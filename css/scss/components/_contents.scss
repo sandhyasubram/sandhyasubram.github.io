@@ -1006,9 +1006,13 @@ span.error {
 
 object {
 	width:100%;
-	height: 80vh;
+	height: 84vh;
+
+	@include media-breakpoint-down(md) {
+		height: 860px;
+	}
 
 	@include media-breakpoint-down(sm) {
-		height: 100%;
+		height: 600px;
 	}
 }
